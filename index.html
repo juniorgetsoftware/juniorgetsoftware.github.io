@@ -8,13 +8,32 @@
         <form>
             <h1>Cadastro de clientes</h1>
 
-            <label for="nome" >Nome</label>
-            <input id="nome" type="text" required>
 
-            <label for="email">E-mail</label>
-            <input id="email" type="email" required>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" required>
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <label for="rua">Rua</label>
+                <input id="rua" type="text" required>
+
+                <label for="numero">Número</label>
+                <input id="numero" type="text" required>
+
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" required>
+
+            </fieldset>
 
             <button>Cadastrar</button>
+            <a href="index.html">Cancelar</a>
 
         </form>
     </body>
