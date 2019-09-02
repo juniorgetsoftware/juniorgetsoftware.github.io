@@ -1,40 +1,101 @@
 <html>
-    <head>
-        <title>Cadastro de clientes</title>
-    </head>
+
+<head>
+    <title>Cadastro de clientes</title>
+</head>
 
 
-    <body>
-        <form>
-            <h1>Cadastro de clientes</h1>
+<body>
+    <form method="GET" action="dados.html">
+        <h1>Cadastro de clientes</h1>
 
 
-            <fieldset>
-                <legend>Dados pessoais</legend>
-                <label for="nome">Nome</label>
-                <input id="nome" type="text" required>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required>
 
-                <label for="email">E-mail</label>
-                <input id="email" type="email" required>
-            </fieldset>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" required>
 
-            <fieldset>
-                <legend>Endereço</legend>
-                
-                <label for="rua">Rua</label>
-                <input id="rua" type="text" required>
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="M"> M
+            <input type="radio" name="sexo" value="F"> F
+        </fieldset>
 
-                <label for="numero">Número</label>
-                <input id="numero" type="text" required>
+        <fieldset>
+            <legend>Endereço</legend>
 
-                <label for="bairro">Bairro</label>
-                <input id="bairro" type="text" required>
+            <label for="rua">Rua</label>
+            <input id="rua" type="text" required>
 
-            </fieldset>
+            <label for="numero">Número</label>
+            <input id="numero" type="text" required>
 
-            <button>Cadastrar</button>
-            <a href="index.html">Cancelar</a>
+            <label for="bairro">Bairro</label>
+            <input id="bairro" type="text" required>
 
-        </form>
-    </body>
+            <label for="estado">Estado</label>
+            <select id="estado">
+                <option value="1" >CE</option>
+                <option value="2" >BA</option>
+                <option value="3" >RJ</option>
+                <option value="4" >RN</option>
+                <option value="5" >SP</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços</legend>
+
+            <input type="checkbox" value="1" name="servico">Chef Particular
+            <input type="checkbox" value="2"  name="servico">“Segurança” de Bebês
+            <input type="checkbox" value="3"  name="servico">Professor Orientador
+            <br />
+
+            <input type="checkbox"  value="4" name="servico">Organizador Profissional
+            <input type="checkbox"  value="5" name="servico">Consertar Computadores
+            <input type="checkbox"  value="6" name="servico">Técnico de Piscinas
+            <br />
+
+            <input type="checkbox"  value="7" name="servico">Cuidador de Casa
+            <input type="checkbox"  value="8" name="servico">Decorador de Casa
+            <input type="checkbox"  value="9" name="servico">Personal Shopper
+            <br />
+
+            <input type="checkbox" value="10"  name="servico">Mecânico Móvel
+            <input type="checkbox" value="11"  name="servico">Detetive Particular
+            <input type="checkbox" value="12"  name="servico">Designer Gráfico
+            <br />
+
+            <input type="checkbox"  value="13" name="servico">Guru da Mudança
+            <input type="checkbox"  value="14" name="servico">Especialista em Ajudantes para Casa
+            <input type="checkbox"  value="15" name="servico">Motorista de Limusine
+            <br />
+
+            <input type="checkbox" value="16"  name="servico">Tradutor
+            <input type="checkbox" value="17"  name="servico">Manutenção de Plantas
+            <input type="checkbox" value="18"  name="servico">Lavador de Janelas
+            <br />
+
+            <input type="checkbox"  value="19" name="servico">Cobrador de Dívidas
+            <input type="checkbox"  value="20" name="servico">Planejador de Festas
+
+            <br />
+            <br />
+            <a href="https://pt.wix.com/blog/2015/02/20-ideias-criativas-para-a-prestacao-de-servicos/">Fonte</a>
+
+
+
+
+
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+        <a href="index.html">Cancelar</a>
+
+    </form>
+</body>
+
 </html>
