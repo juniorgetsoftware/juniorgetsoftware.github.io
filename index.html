@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caflix</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-dark bg-danger">
+
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Caflix</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listar.html">Listar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container pt-3">
+
+        <div class="alert alert=succeess">
+            <div id="mensagem"></div>
+        </div>
+
+        <form>
+
+            <div class="row">
+                <div class="form-group col-lg-10 col-md-8 col-sm-12">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required class="form-control">
+                </div>
+
+                <div class="form-group col-lg-2 col-md-4 col-sm-12">
+                    <label for="ano">Ano</label>
+                    <input id="ano" name="ano" type="number" required class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-12 col-md-2 col-sm-12">
+                    <label for="sinopse">Sinopse</label>
+                    <textarea id="sinopse" name="sinopse" type="textarea" required class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                    <label for="url-imagem">Url da imagem</label>
+                    <input id="url-imagem" name="url_capa" type="url" required class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button id="btn-cadastrar" class="btn btn-primary" type="button">Cadastrar
+                    <i class="fa fa-cloud"></i>
+                </button>
+        </form>
+        </div>
+
+        <div class="container pt-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Ano</th>
+                        <th scope="col">Sinopse</th>
+                        <th scope="col">Capa</th>
+                    </tr>
+                </thead>
+                <tbody id="jogos">
+
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</body>
+
+</html>
